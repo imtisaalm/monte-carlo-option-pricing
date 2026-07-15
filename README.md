@@ -10,19 +10,7 @@ analytical Black-Scholes price.
   strike, maturity, risk-free rate, volatility, and continuous dividend yield
 - **Antithetic variates** variance reduction (on by default)
 - **Standard error and 95% confidence interval** for every estimate
-- **Analytical Black-Scholes benchmark** computed alongside each simulation,
-  including the zero-volatility edge case
-- **Reproducible runs** via an optional random seed
-- Fully type-annotated, no dependencies beyond NumPy
-
-## Requirements
-
-- Python 3.9+
-- NumPy
-
-```bash
-pip install numpy
-```
+- **Analytical Black-Scholes benchmark** 
 
 ## Usage
 
@@ -69,8 +57,6 @@ print(result.estimated_price)
 print(result.confidence_interval_95)
 print(result.black_scholes_price)
 ```
-
-## How it works
 
 Under the risk-neutral measure, the terminal asset price follows
 
